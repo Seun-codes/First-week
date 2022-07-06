@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Applicant extends Person {
-    private static final int passcode = 0;
-    private List<Person>employee = new ArrayList();
+    private static   int passcode = 0;
+
     private Role role;
     private ApplicantE qualification;
 
@@ -32,22 +32,9 @@ public class Applicant extends Person {
         return qualification;
     }
 
-    public void setQualification(ApplicantE qualification) {
-        this.qualification = qualification;
-    }
-
-    public List<Person> getEmployee() {
-        return employee;
-    }
 
 
-    public void setEmployee(List<Person> employee) {
-        this.employee = employee;
-    }
 
-    public void addEmployee (Person employee){
-        this.employee.add(employee);
-    }
 
     @Override
     public void setHired(boolean hired) {

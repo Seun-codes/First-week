@@ -2,7 +2,7 @@ package org.example.Implement;
 
 import org.example.Enums.ApplicantE;
 import org.example.Enums.Role;
-import org.example.Interfaces.ManagerService;
+import org.example.Interfaces.ManagerServiceInterface;
 import org.example.model.Applicant;
 import org.example.model.Product;
 import org.example.model.Staff;
@@ -11,8 +11,8 @@ import org.example.model.Store;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ManagerServiceImpl  implements ManagerService {
-    private List<Product> products;
+public class ManagerServiceInterfaceImpl implements ManagerServiceInterface {
+
     private List<Staff> employee = new ArrayList<>();
 
     private List<Applicant> applicant = new ArrayList<>();

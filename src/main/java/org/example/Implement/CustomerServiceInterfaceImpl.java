@@ -1,26 +1,25 @@
 package org.example.Implement;
 
-import org.example.Enums.Role;
-import org.example.Interfaces.CustomerService;
+import org.example.Interfaces.CustomerServiceInterface;
 import org.example.model.Product;
 import org.example.model.Store;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerServiceImpl implements CustomerService {
+public class CustomerServiceInterfaceImpl implements CustomerServiceInterface {
 
     private String customerName;
 
     private List<Product> customerCart;
 
 
-    public CustomerServiceImpl(String customerName) {
+    public CustomerServiceInterfaceImpl(String customerName) {
         this.customerName = customerName;
         this.customerCart =new ArrayList<>();
     }
 
-    public CustomerServiceImpl(String customerName, List<Product> customerCart) {
+    public CustomerServiceInterfaceImpl(String customerName, List<Product> customerCart) {
         this.customerName = customerName;
         this.customerCart = customerCart;
     }
@@ -31,7 +30,8 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     @Override
-    public boolean buy(String productName, String category, Product product, int buyingQuantity, Store store) {
+    public int buy(String productName, String category, Product product, int buyingQuantity, Store store) {
+        int output = 0;
 
 
         for(Product prod : store.getProductList()){
@@ -44,24 +44,24 @@ public class CustomerServiceImpl implements CustomerService {
                 prod.setBuyingQuantity(buyingQuantity);
                 prod.setQuantity(prod.getQuantity() - buyingQuantity);
                 System.out.println(prod.getName() + " added to cart ");
-                return false;
+                return output = 0;
             } else if (prod.getName().trim().toLowerCase().equals(productName.trim().toLowerCase()) &&
             prod.getCategory().toLowerCase().equals(category.toLowerCase()) &&
                     prod.getQuantity() < buyingQuantity) {
                 System.out.println("We only have " + prod.getQuantity() + " " + prod.getName() + " in the store kindly re-order ");
-                return true;
+                return output =1;
             } else if (prod.getName().trim().toLowerCase().equals(productName.trim().toLowerCase()) &&
             !prod.getCategory().equals(category)) {
                 System.out.println(productName + "does not belong to this category, kindly try"
                 + prod.getCategory() + " category ");
-                return true;
+                return output =1;
             }
 
         }
         System.out.println("Product out of stock, kindly change your order.");
+        output =1;
 
-
-        return  true;
+        return  output;
     }
 
 

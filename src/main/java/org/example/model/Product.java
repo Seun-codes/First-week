@@ -1,32 +1,62 @@
 package org.example.model;
 
-import java.util.List;
 import java.util.Objects;
 
 public class Product {
 
-    private String productName;
-    private int productQuantity;
+    private String category;
+    private String name;
+    private int quantity;
 
-    public Product(String productName, int productQuantity) {
-        this.productName = productName;
-        this.productQuantity = productQuantity;
+    private Double price;
+
+    private int buyingQuantity;
+
+    public Product(String category, String name, int quantity, Double price) {
+        this.category = category;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
     }
 
-    public String getProductName() {
-        return productName;
+    public Product(String category, String name, int quantity, double price, int buyingQuantity) {
+        this.category = category;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+        this.buyingQuantity = buyingQuantity;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+
+
+
+    public String getCategory() {
+        return category;
     }
 
-    public int getProductQuantity() {
-        return productQuantity;
+    public String getName() {
+        return name;
     }
 
-    public void setProductQuantity(int productQuantity) {
-        this.productQuantity = productQuantity;
+    public int getQuantity() {
+        return quantity;
+   }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+
+    public int getBuyingQuantity() {
+      return buyingQuantity;
+   }
+
+  public void setBuyingQuantity(int buyingQuantity) {
+       this.buyingQuantity = buyingQuantity;
     }
 
     @Override
@@ -34,11 +64,21 @@ public class Product {
         if (this == o) return true;
         if (!(o instanceof Product)) return false;
         Product product = (Product) o;
-        return productQuantity == product.productQuantity && productName.equals(product.productName);
+        return name == product.name && quantity == product.quantity && Double.compare(product.price, price) == 0 && category.equals(product.category);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(productName, productQuantity);
+        return Objects.hash(category, name, quantity, price);
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "category='" + category + '\'' +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                '}';
     }
 }

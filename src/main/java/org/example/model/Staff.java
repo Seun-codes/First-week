@@ -18,9 +18,5 @@ public class Staff extends Person {
         return role;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
 
 }
