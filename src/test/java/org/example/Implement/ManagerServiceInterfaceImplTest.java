@@ -9,11 +9,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ManagerServiceImplTest {
     ManagerServiceImpl managerService = new ManagerServiceImpl();
-    Store store = new Store("Store");
+    Store store;
 
     Staff manager = new Staff("Temi", 123, Role.MANAGER );
 
