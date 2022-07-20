@@ -1,5 +1,10 @@
 package org.example.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public abstract class Person {
     private String name;
     private int passcode;
@@ -12,27 +17,4 @@ public abstract class Person {
     }
 
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPasscode() {
-        return passcode;
-    }
-
-    public void setPasscode(int passcode) {
-        this.passcode = passcode;
-    }
-
-    public boolean isHired() {
-        return isHired;
-    }
-
-    public void setHired(boolean hired) {
-        isHired = hired;
-    }
 }

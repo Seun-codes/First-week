@@ -6,18 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="91852c42-4bb0-4ce6-bc70-e4496a03a056" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/ManagerServiceInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/ManagerServiceInterfaceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CashierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CashierService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CustomerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CustomerServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/ManagerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/ManagerServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Applicant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/ManagerServiceInterfaceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/ManagerServiceInterfaceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +29,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,9 +53,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/dec/Desktop/Lizzy_ConvenienceStore",
+    "last_opened_file_path": "/Users/dec/Desktop/Lizzy_ConvenienceStore Real",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -68,15 +74,18 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.example.Implement" />
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceInterfaceImplTest.buy">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="Lizzy_ConvenienceStore" />
+      <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -87,8 +96,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CashierServiceImplTest.comparingProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lizzy_ConvenienceStore Real" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Implement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Implement" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Implement.CashierServiceImplTest" />
+      <option name="METHOD_NAME" value="comparingProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashierServiceImplTest.sell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lizzy_ConvenienceStore" />
+      <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.Implement.*" />
@@ -103,8 +128,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceInterfaceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lizzy_ConvenienceStore" />
+    <configuration name="CustomerServiceInterfaceImplTest.buy (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.Implement.*" />
@@ -113,7 +138,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Implement" />
       <option name="MAIN_CLASS_NAME" value="org.example.Implement.CustomerServiceInterfaceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="buy" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,8 +160,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerServiceInterfaceImplTest.hire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lizzy_ConvenienceStore" />
+    <configuration name="CustomerServiceInterfaceImplTest.buy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.Implement.*" />
@@ -143,8 +169,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Implement" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Implement.ManagerServiceInterfaceImplTest" />
-      <option name="METHOD_NAME" value="hire" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Implement.CustomerServiceInterfaceImplTest" />
+      <option name="METHOD_NAME" value="buy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.buy" />
-        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest" />
-        <item itemvalue="JUnit.ManagerServiceInterfaceImplTest.hire" />
-        <item itemvalue="JUnit.CashierServiceImplTest.sell" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CashierServiceImplTest.comparingProduct" />
+        <item itemvalue="JUnit.CashierServiceImplTest.sell" />
+        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.buy (1)" />
+        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.buy" />
       </list>
     </recent_temporary>
   </component>
@@ -168,8 +194,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656430314976</updated>
+      <workItem from="1657192930011" duration="468000" />
+      <workItem from="1657566965366" duration="1313000" />
+      <workItem from="1658326680071" duration="110000" />
+      <workItem from="1658326801749" duration="641000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -203,6 +236,30 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java</url>
+          <line>49</line>
+          <properties class="org.example.Implement.CashierServiceImplTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

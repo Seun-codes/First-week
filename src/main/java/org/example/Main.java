@@ -1,16 +1,12 @@
 package org.example;
 
-import org.example.Enums.ApplicantE;
 import org.example.Enums.Role;
+import org.example.FileReader.File;
 import org.example.Implement.CashierServiceImpl;
 import org.example.Implement.CustomerServiceInterfaceImpl;
 import org.example.Implement.ManagerServiceInterfaceImpl;
 import org.example.model.*;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,77 +14,102 @@ public class Main {
     public static void main(String[] args) {
 
         Store store = new Store("store",Role.MANAGER);
+       //StoreImpl store1 = new StoreImpl();
+
         Product products = null;
         List<Product> productList = new ArrayList<>();
-        String [] values;
-
-        String path = "src/main/java/productDetails.csv";
-
-        try {
-            BufferedReader productDetails = new BufferedReader(new FileReader(path));
-            String line;
-
-            while ((line = productDetails.readLine()) != null) {
-                values = line.split(",");
-                int productIndex = store.findProduct(values[1]);
-
-                if(store.findProduct(values[1]) >= 0){
-                    Product productInStore = store.getProductList().get(productIndex);
-                    productInStore.setQuantity(productInStore.getQuantity() + Integer.parseInt(values[2]));
-
-                } else {
-                    String name = values[1];
-                    String category = values[0];
-                    int quantity= Integer.parseInt(values[2]);
-                    double price = Double.parseDouble(values[3]);
-                    products = new Product(category,name,quantity,price);
-                    store.getProductList().add(products);
-                }
+        File read = new File("src/main/java/productDetails.csv");
+        read.readProductFile(null,store);
 
 
-
-                //System.out.println(products);
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        for(Product product : store.getProductList()){
+            System.out.println(product.getName() + " " + product.getQuantity());
         }
 
-        for(Product prod : store.getProductList()){
-            System.out.println(prod.getName() + " " + prod.getQuantity());
-        }
-
-        List<Product> Lizzy = new ArrayList<>();
 
         ManagerServiceInterfaceImpl managerService = new ManagerServiceInterfaceImpl();
 
 
-     CustomerServiceInterfaceImpl customer = new CustomerServiceInterfaceImpl("bola");
+//     CustomerServiceInterfaceImpl customer1 = new CustomerServiceInterfaceImpl("bola");
+//     CustomerServiceInterfaceImpl customer1 = new CustomerServiceInterfaceImpl("bola");
 
 
        
-        customer.buy("Oatmeal Raisin","Cookies",products,6,store);
-        customer.buy("Arrowroot","bars",products,45, store);
-        customer.buy("Arrowroot","Cookies",products,45, store);
+       // customer.buy("Oatmeal Raisin","Cookies",products,6,store);
+        System.out.println("*".repeat(70));
 
-        CashierServiceImpl cashier = new CashierServiceImpl("TLA", 334);
-        cashier.sell(customer, customer.getCustomerCart());
+        CustomerServiceInterfaceImpl customer1 = new CustomerServiceInterfaceImpl("bola");
+        customer1.buy(customer1,"Arrowroot","Cookies",24,store);
+        customer1.buy(customer1,"Potato chips","Snacks",14,store);
+        customer1.buy(customer1,"Carrot","Bars",54,store);
 
-
-
-
-        Staff manager = new Staff("Temi", 123, Role.MANAGER );
-
-        managerService.saveStaff(store, manager);
-
-        Applicant applicant = new Applicant("Tope",Role.APPLICANT, ApplicantE.QUALIFIED);
-        Applicant WRT = new Applicant("kunle", Role.APPLICANT, ApplicantE.UNQUALIFIED);
+        System.out.println("*".repeat(70));
+//        CashierServiceImpl cashier = new CashierServiceImpl("TLA", 334);
+       // cashier.giveOutReceipt(customer1, customer1.getCustomerCart());
 
 
-        managerService.saveStaff(store, manager);
-        managerService.hire(store,manager,WRT);
-       managerService.hire(store,manager,applicant);
+        System.out.println("*".repeat(70));
+        CustomerServiceInterfaceImpl customer2 = new CustomerServiceInterfaceImpl("kola");
+        customer2.buy(customer2,"Arrowroot","Cookies",90,store);
+        customer2.buy(customer2,"Carrot","Bars",50,store);
+        customer2.buy(customer2,"Potato chips","Snacks",20,store);
+        System.out.println("*".repeat(70));
+        //System.out.println(customer2.getCustomerCart());
+
+
+        System.out.println("*".repeat(70));
+        CustomerServiceInterfaceImpl customer3 = new CustomerServiceInterfaceImpl("bola");
+        customer3.buy(customer3,"Arrowroot","Cookies",20,store);
+        customer3.buy(customer3,"Carrot","Bars",70,store);
+        customer3.buy(customer3,"Potato chips","Snacks",10,store);
+
+        CashierServiceImpl cashier1 = new CashierServiceImpl("Joan",123);
+        cashier1.giveOutReceipt(customer1, customer1.getCustomerCart());
+        cashier1.giveOutReceipt(customer2, customer2.getCustomerCart());
+        cashier1.giveOutReceipt(customer3, customer3.getCustomerCart());
+
+
+        cashier1.comparingProduct(customer1);
+        cashier1.comparingProduct(customer2);
+        cashier1.comparingProduct(customer3);
+
+        System.out.println("*".repeat(70));
+        while(!cashier1.getCarrot().isEmpty()){
+            System.out.println(cashier1.getCarrot().poll());
+        }
+
+        System.out.println("*".repeat(70));
+        while(!cashier1.getArrowroot().isEmpty()){
+            System.out.println(cashier1.getArrowroot().poll());
+        }
+
+        System.out.println("*".repeat(70));
+        while(!cashier1.getPotatoChips().isEmpty()){
+            System.out.println(cashier1.getPotatoChips().poll());
+        }
+
+
+
+
+
+        // cashier.CheckingForProductQuantity(customer1.getCustomerCart(),customer2.getCustomerCart(),customer3.getCustomerCart());
+
+       // customer3.buy(customer3,"Arrowroot","Cookies",25,store);
+
+
+        //System.out.println(store.productCategories("bars"));
+       // System.out.println(cashier.PrioritySell("arrowroot",customer1));
+
+       // System.out.println(StoreImpl.getProductPriorityQueue());
+
+
+
+
+
+
+
+
+
 
 
 

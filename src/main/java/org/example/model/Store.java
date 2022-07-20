@@ -19,6 +19,10 @@ public class Store implements ProductServicesInterface {
         //this.product = product;
     }
 
+    public Store() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -37,6 +41,19 @@ public class Store implements ProductServicesInterface {
 
     public List<Product> getProductList() {
         return productList;
+    }
+
+
+    public ArrayList  productCategories(String category){
+        ArrayList<Product> productCategory = new ArrayList<>();
+        for(Product products : this.getProductList()){
+            if(products.getCategory().equalsIgnoreCase(category)){
+                productCategory.add(products);
+
+            }
+        }
+        return productCategory;
+
     }
 
     @Override

@@ -1,7 +1,14 @@
 package org.example.model;
 
-import java.util.Objects;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Objects;
+@Getter
+@Setter
 public class Product {
 
     private String category;
@@ -11,18 +18,21 @@ public class Product {
     private Double price;
 
     private int buyingQuantity;
+    private List<Product> products = new ArrayList<>();
+    private String boughtBy;
+    private int positionInQueue;
 
-    public Product(String category, String name, int quantity, Double price) {
+    public Product(String category, String name, Double price, int buyingQuantity) {
         this.category = category;
         this.name = name;
-        this.quantity = quantity;
         this.price = price;
+        this.buyingQuantity = buyingQuantity;
     }
 
-    public Product(String category, String name, int quantity, double price, int buyingQuantity) {
-        this.category = category;
-        this.name = name;
-        this.quantity = quantity;
+    public Product(String category, String name, int quantity, double price) {
+        this.category =category;
+        this.name =name;
+        this.quantity =quantity;
         this.price = price;
         this.buyingQuantity = buyingQuantity;
     }
@@ -30,34 +40,7 @@ public class Product {
 
 
 
-    public String getCategory() {
-        return category;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getQuantity() {
-        return quantity;
-   }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-
-    public int getBuyingQuantity() {
-      return buyingQuantity;
-   }
-
-  public void setBuyingQuantity(int buyingQuantity) {
-       this.buyingQuantity = buyingQuantity;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -81,4 +64,6 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+
 }

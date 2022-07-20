@@ -1,11 +1,14 @@
 package org.example.model;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.Enums.ApplicantE;
 import org.example.Enums.Role;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
+@Setter
 public class Applicant extends Person {
     private static   int passcode = 0;
 
@@ -19,20 +22,6 @@ public class Applicant extends Person {
         this.role = role;
         this.qualification= qualification;
     }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public ApplicantE getQualification() {
-        return qualification;
-    }
-
-
 
 
 
