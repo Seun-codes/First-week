@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91852c42-4bb0-4ce6-bc70-e4496a03a056" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/src.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CashierService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CashierService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CustomerServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Interfaces/CustomerServiceInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Applicant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +186,7 @@
       <workItem from="1657192930011" duration="468000" />
       <workItem from="1657566965366" duration="1313000" />
       <workItem from="1658326680071" duration="110000" />
-      <workItem from="1658326801749" duration="641000" />
+      <workItem from="1658326801749" duration="2630000" />
     </task>
     <servers />
   </component>
