@@ -17,53 +17,41 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerServiceInterfaceImplTest  {
-    CustomerServiceInterfaceImpl customer = new CustomerServiceInterfaceImpl("dupe");
+
+    CustomerServiceInterfaceImpl customer3;
+    CustomerServiceInterfaceImpl customer1;
+    CustomerServiceInterfaceImpl customer2;
+    CustomerServiceInterfaceImpl customer4;
+    CustomerServiceInterfaceImpl customer5;
+    CustomerServiceInterfaceImpl customer;
     Store store = new Store("main",Role.MANAGER);
     private List<Product> productList = new ArrayList<>();
-    Product products = new Product("Cookies","oatMeal Raisin",6,3.0);
+    Product products;
+    Product product1;
+    Product product2 ;
+    Product product3 ;
+    Product product5 ;
+
     List <Product> customerCart = new ArrayList<>();
 
     @BeforeEach
     void setUp() {
+        product5 = new Product("Cookies","Arrowroot",300,2.18);
+        product1 = new Product("Cookies","Oatmeal Raisin",300,2.18);
+        product2 = new Product("Bars","Carrot",300,1.77);
+        product3 = new Product("Snacks","Potato chips",300,1.35);
+        products = new Product("Cookies","oatMeal Raisin",6,3.0);
+        customer = new CustomerServiceInterfaceImpl("dupe");
+        customer3 = new CustomerServiceInterfaceImpl("Kingsley");
+        customer1 = new CustomerServiceInterfaceImpl("kola");
+        customer2 = new CustomerServiceInterfaceImpl("folu");
+        customer4 = new CustomerServiceInterfaceImpl("Ayo");
+        customer5 = new CustomerServiceInterfaceImpl("leke");
         store.getProductList().add(products);
-        // store = new Store("store", Role.MANAGER);
-         //products = new Product();
-       // List<Product> productList = new ArrayList<>();
-         //customer = new CustomerServiceInterfaceImpl("bola");
-//        String[] values;
-//
-//        String path = "src/main/java/productDetails.csv";
-//
-//        try {
-//            BufferedReader productDetails = new BufferedReader(new FileReader(path));
-//            String line;
-//
-//            while ((line = productDetails.readLine()) != null) {
-//                values = line.split(",");
-//                int productIndex = store.findProduct(values[1]);
-//
-//                if (store.findProduct(values[1]) >= 0) {
-//                    Product productInStore = store.getProductList().get(productIndex);
-//                    productInStore.setQuantity(productInStore.getQuantity() + Integer.parseInt(values[2]));
-//
-//                } else {
-//                    String name = values[1];
-//                    String category = values[0];
-//                    int quantity = Integer.parseInt(values[2]);
-//                    double price = Double.parseDouble(values[3]);
-//                   products = new Product(category, name, quantity, price);
- //                   store.getProductList().add(products);
-//                }
-//
-//
-//                //System.out.println(products);
-//            }
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
+        store.getProductList().add(product1);
+        store.getProductList().add(product2);
+        store.getProductList().add(product3);
+        store.getProductList().add(product5);
 
     }
 
@@ -72,7 +60,18 @@ class CustomerServiceInterfaceImplTest  {
     @Test
     void buy() {
 
-        int actual = customer.buy(customer,"Oatmeal Raisin","Cookies",4,store);
-        assertEquals(0,actual);
+       customer.buy(customer,"Oatmeal Raisin","Cookies",4,store);
+       customer1.buy(customer1,"Arrowroot","Cookies",4,store);
+       customer2.buy(customer2,"Potato chips","Snacks",4,store);
+       customer3.buy(customer3,"Carrot","Bars",4,store);
+
+    }
+
+    @Test
+    void testBuy() {
+        customer = new CustomerServiceInterfaceImpl("dupe");
+        customer3 = new CustomerServiceInterfaceImpl("Kingsley");
+        customer1 = new CustomerServiceInterfaceImpl("kola");
+        customer2 = new CustomerServiceInterfaceImpl("folu");
     }
 }

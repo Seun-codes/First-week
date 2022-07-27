@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="91852c42-4bb0-4ce6-bc70-e4496a03a056" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CashierServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/DTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/DTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ProductComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ProductComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Implement/CustomerServiceInterfaceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -36,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/dec/Desktop/Lizzy_ConvenienceStore Real",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dec/Documents/Lizzy_ConvenienceStore Real week 4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -71,15 +97,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="Lizzy_ConvenienceStore Real" />
+      <module name="Lizzy_ConvenienceStore Real week 4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashierServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lizzy_ConvenienceStore Real" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Implement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Implement" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Implement.CashierServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,7 +157,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceInterfaceImplTest.buy (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceInterfaceImplTest.buy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
@@ -132,23 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceInterfaceImplTest.buy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lizzy_ConvenienceStore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Implement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.Implement" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Implement.CustomerServiceInterfaceImplTest" />
-      <option name="METHOD_NAME" value="buy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceInterfaceImplTest.buy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerServiceInterfaceImplTest.testBuy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lizzy_ConvenienceStore Real" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +183,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Implement" />
       <option name="MAIN_CLASS_NAME" value="org.example.Implement.CustomerServiceInterfaceImplTest" />
-      <option name="METHOD_NAME" value="buy" />
+      <option name="METHOD_NAME" value="testBuy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CashierServiceImplTest" />
         <item itemvalue="JUnit.CashierServiceImplTest.comparingProduct" />
         <item itemvalue="JUnit.CashierServiceImplTest.sell" />
-        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.buy (1)" />
-        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.buy" />
+        <item itemvalue="JUnit.CustomerServiceInterfaceImplTest.testBuy" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +209,13 @@
       <workItem from="1657192930011" duration="468000" />
       <workItem from="1657566965366" duration="1313000" />
       <workItem from="1658326680071" duration="110000" />
-      <workItem from="1658326801749" duration="3564000" />
+      <workItem from="1658326801749" duration="30051000" />
+      <workItem from="1658511183345" duration="1240000" />
+      <workItem from="1658513753197" duration="1703000" />
+      <workItem from="1658533131399" duration="2286000" />
+      <workItem from="1658678743726" duration="2224000" />
+      <workItem from="1658868866311" duration="2025000" />
+      <workItem from="1658871656187" duration="4698000" />
     </task>
     <servers />
   </component>
@@ -197,7 +227,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="decadevs" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -217,37 +259,13 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/ManagerServiceInterfaceImplTest.java</url>
-          <line>29</line>
-          <properties class="org.example.Implement.ManagerServiceInterfaceImplTest" method="hire">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java</url>
+          <line>78</line>
+          <properties class="org.example.Implement.CashierServiceImplTest" method="EmptyCart">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java</url>
-          <line>49</line>
-          <properties class="org.example.Implement.CashierServiceImplTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Implement/CustomerServiceInterfaceImpl.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/Implement/CashierServiceImplTest.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,12 +1,13 @@
 package org.example.Implement;
 
+import lombok.Getter;
 import org.example.Interfaces.CustomerServiceInterface;
 import org.example.model.Product;
 import org.example.model.Store;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
 public class CustomerServiceInterfaceImpl implements CustomerServiceInterface {
 
     private String customerName;
@@ -45,16 +46,9 @@ public class CustomerServiceInterfaceImpl implements CustomerServiceInterface {
 
                Product productInCart = new Product(category,productName, prod.getPrice(), buyingQuantity);
                 customer.getCustomerCart().add(productInCart);
-               // productInCart.setBuyingQuantity(buyingQuantity);
                 productInCart.setQuantity(buyingQuantity);
-                //customer.getCustomerCart().add(productInCart);
-               // productInCart.setBoughtBy(customer.getCustomerName());
+                productInCart.setBoughtBy(getCustomerName());
                prod.setQuantity(prod.getQuantity() - buyingQuantity);
-
-
-
-
-                System.out.println(prod.getName() + "  " + " added to cart ");
                 return output = 0;
             } else if (prod.getName().toLowerCase().equals(productName.toLowerCase()) &&
             prod.getCategory().toLowerCase().equals(category.toLowerCase()) &&
@@ -77,12 +71,4 @@ public class CustomerServiceInterfaceImpl implements CustomerServiceInterface {
 
 
 
-    public List<Product> getCustomerCart() {
-
-        return customerCart;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
 }

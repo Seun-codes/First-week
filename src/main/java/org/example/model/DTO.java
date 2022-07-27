@@ -1,9 +1,9 @@
 package org.example.model;
 
 
+import lombok.Getter;
 
-
-
+@Getter
 public class DTO {
     private String productName;
     private int quantity;
@@ -15,17 +15,6 @@ public class DTO {
         this.customerName = customerName;
     }
 
-    public String getProductName() {
-        return productName;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
 
     @Override
     public String toString() {

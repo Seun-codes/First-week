@@ -1,17 +1,21 @@
 package org.example.model;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.Enums.Role;
 import org.example.Interfaces.ProductServicesInterface;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
+@Setter
 public class Store implements ProductServicesInterface {
     private String name;
     private List<Staff> listOfStaff;
-    private List<Product> productList = new ArrayList<>();
+    private static List<Product> productList = new ArrayList<>();
     private Role roles;
     //private Product product;
+
 
     public Store(String name, Role roles) {
         this.name = name;
@@ -23,26 +27,11 @@ public class Store implements ProductServicesInterface {
 
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public List<Staff> getListOfStaff() {
-        return listOfStaff;
-    }
-
-    public void setListOfStaff(List<Staff> listOfStaff) {
-        this.listOfStaff = listOfStaff;
-    }
-
-    public List<Product> getProductList() {
+    public static  List<Product> getProductList() {
         return productList;
     }
-
 
     public ArrayList  productCategories(String category){
         ArrayList<Product> productCategory = new ArrayList<>();
